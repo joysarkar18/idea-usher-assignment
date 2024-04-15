@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1053991238659",
+    "project_id": "idea-usher-e59c4",
+    "storage_bucket": "idea-usher-e59c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053991238659:android:9246496c6b0f5ed17ee236",
+        "android_client_info": {
+          "package_name": "com.joy_sarkar.idea_usher"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCOUQ_eBrZCMXQvd_q6Y1qefZmUfLIn3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

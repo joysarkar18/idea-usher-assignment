@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
+import 'package:idea_usher/app/modules/home/controllers/home_controller.dart';
 import 'package:idea_usher/app/modules/home/views/home_view.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -16,17 +15,17 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    print("init state called");
     getoHome();
     super.initState();
   }
 
   void getoHome() async {
-    await Future.delayed(Duration(seconds: 2), () {
-      print("hiiii");
+    await Future.delayed(const Duration(seconds: 2), () {
       Get.to(HomeView());
     });
   }
+
+  HomeController controller = Get.put(HomeController());
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +63,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               child: Animate(
                 effects: const [
                   VisibilityEffect(duration: Duration(milliseconds: 700))
